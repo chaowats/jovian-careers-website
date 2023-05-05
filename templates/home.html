@@ -16,6 +16,7 @@
     <title>Jovian Careers</title>
   </head>
   <body>
+    {% include 'nav.html'%}
     <div class="container ">
       <h1 class="text-center mt-2 mb-4">{{company_name}} Careers</h1>
       <img class="img-fluid" id='banner' src="https://jovian-careers-website.chaowats.repl.co/static/banner.jpg" height="320">
@@ -30,10 +31,12 @@
       </div>
 
       <div class="text-center">
-      <button class="btn btn-primary btn-lg">Contact Us</button>
+       <a class="btn btn-primary btn-lg" href="mailto:hello@jovian.ai?subject=Question%20about%20Job%20Opernings&body=My%20name%3A%20%3Cyour%20name%20here%3E%0D%0A%0D%0AMy%20questions%3A%20%3Center%20question%20here%3E%0D%0A">Contact Us</a>
+      
         <p class="mt-4">Copyright 2022, Jovian</p>
       </div>
       
     </div>
+    {% include 'footer.html' %}
   </body>
 </html>
